@@ -2,7 +2,7 @@
 
 void NumDeg(int num, int step)
 {
-int result = 1;
+int result = num;
 if(step == 0)
 {
     result = 0;
@@ -11,12 +11,12 @@ if(step == 0)
 else 
     for(int size = 1; size <= step; size++)
     {
-        result = result * step;
+        result = result * num;
         Console.WriteLine(result);
     }
     for(int size =1; size >= step; size--)
     {
-        result = result / step;
+        result = result / num;
         Console.WriteLine(result);
     }
 }
@@ -25,8 +25,8 @@ int number = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input a degree of number: ");
 int step = Convert.ToInt32(Console.ReadLine());
 
-(step);
 
+Console.WriteLine(NumDeg);
 
 /* 
 Console.WriteLine("введите число A");
