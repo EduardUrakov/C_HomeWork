@@ -65,7 +65,15 @@ void ShowArray(int[] array)
 {
     for(int i = 0; i < array.Length; i++)
     {
-       Console.Write(array[i] + " ");
+        if(i == 0) Console.Write("[" + array[i] + ", ");
+        else
+        {
+            if(i == array.Length - 1) Console.Write(array[i] + "]");
+            else
+            {
+                Console.Write(array[i] + ", ");
+            }
+        }
     }
 }
 
@@ -73,3 +81,6 @@ int [] myArray = CreateArray();
 
 Console.Write("The massiv of eigth elements is: ");
 ShowArray(myArray);
+
+
+
