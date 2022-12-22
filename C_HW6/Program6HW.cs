@@ -31,18 +31,14 @@ double k2 = Convert.ToDouble(Console.ReadLine());
 Console.Write("Input point b2: ");
 double b2 = Convert.ToDouble(Console.ReadLine());
         
-    if(k1 != k2 || b1 != b2)
-        {
-            double x = (b2 - b1) / (k1 - k2);
-            double y = k1 * x + b1;
-            x = Math.Round(x, 2);
-            y = Math.Round(y, 2);
-            Console.WriteLine($"The intersection point is:({x};{y})");
-            Console.WriteLine();
-        }
-        else 
-            {
-                Console.WriteLine($"The intersection point is all of function!!!");
-                Console.WriteLine();
-            }
+double x = (b2 - b1) / (k1 - k2);
+double y = k1 * x + b1;
+x = Math.Round(x, 2);
+y = Math.Round(y, 2);
+
+Console.WriteLine($"The intersection point is:({x};{y})");
+Console.WriteLine();
+
+
+
 
