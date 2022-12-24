@@ -3,14 +3,8 @@
 /* void NumDegree(int num, int step)
 {
     int result = 1;
-    if(step == 0)
-    {
-        result = 0;
-    }    
-    else
-    {
-        for(int i = 1; i <= step; i++) result = result * num;
-    }
+    for(int i = 1; i <= step; i++) result = result * num;
+    
 Console.WriteLine("The result is: " + result);
 }
 
